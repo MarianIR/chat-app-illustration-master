@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Rubik", sans-serif;
+  font-size: 10px;
+}
+
+body {
+  width: 100%;
+  background-color: hsl(270, 20%, 96%);
+}
+
+.main-section {
+  width: 90%;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 1024px) {
+  .main-section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+}
+.main-section .purpleModel {
+  background-image: linear-gradient(0deg, hsl(264, 100%, 61%) 20%, hsl(293, 100%, 63%) 100%);
+  height: 50%;
+  width: 50%;
+  border-radius: 0 0 20rem 0;
+  z-index: -1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+@media (min-width: 768px) {
+  .main-section .purpleModel {
+    width: 25%;
+    height: 90%;
+    border-radius: 0 0 28rem 18rem;
+  }
+}
+@media (min-width: 768px) {
+  .main-section .pinkModel {
+    bottom: 0;
+    right: 0;
+    background-image: linear-gradient(0deg, hsl(264, 100%, 61%) 20%, hsl(293, 100%, 63%) 100%);
+    width: 25%;
+    height: 90%;
+    z-index: -1000;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    opacity: 0.1;
+    border-top-left-radius: 25rem;
+  }
+}
+.main-section .mobile-content-section {
+  margin: 5rem auto;
+  width: 90%;
+  height: auto;
+  max-width: 35rem;
+  background-color: #fff;
+  border-radius: 4rem;
+}
+.main-section .mobile-content-section .content-section {
+  margin: 1rem auto;
+  width: 90%;
+  height: 100%;
+  max-width: 31rem;
+  background-color: hsl(270, 20%, 96%);
+  border-radius: 4rem;
+}
+.main-section .mobile-content-section .content-section .section-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(90deg, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  border-radius: 2rem 2rem 0.5rem 0.5rem;
+}
+.main-section .mobile-content-section .content-section .section-header .notch {
+  display: block;
+  width: 70%;
+  max-width: 15rem;
+  height: 2rem;
+  margin: 0 auto 1rem;
+  background-color: #fff;
+  top: 0;
+  border-radius: 0 0 1.5rem 1.5rem;
+}
+.main-section .mobile-content-section .content-section .section-header .nav-section {
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+.main-section .mobile-content-section .content-section .section-header .nav-section .hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.main-section .mobile-content-section .content-section .section-header .nav-section .hero .left-arrow {
+  width: 1rem;
+  height: 1.5rem;
+  cursor: pointer;
+}
+.main-section .mobile-content-section .content-section .section-header .nav-section .hero .avatar-portret {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 0.1rem solid #fff;
+  margin: 0 1rem;
+}
+.main-section .mobile-content-section .content-section .section-header .nav-section .hero .person .name {
+  font-size: 1.5rem;
+  color: hsl(0, 0%, 100%);
+}
+.main-section .mobile-content-section .content-section .section-header .nav-section .hero .person .status {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: hsl(0, 0%, 100%);
+}
+.main-section .mobile-content-section .content-section .section-header .nav-section .vertical-dots {
+  width: 1rem;
+  height: 1.5rem;
+  cursor: pointer;
+}
+.main-section .mobile-content-section .content-section .conversation-article {
+  width: 100%;
+  padding-bottom: 0.5rem;
+}
+.main-section .mobile-content-section .content-section .conversation-article .first-message {
+  width: 60%;
+}
+.main-section .mobile-content-section .content-section .conversation-article .first-message .message {
+  margin: 1rem;
+  padding: 1rem;
+  color: hsl(276, 100%, 81%);
+  background-color: rgb(251, 235, 255);
+  border-radius: 1rem 1rem 1rem 0.5rem;
+}
+.main-section .mobile-content-section .content-section .conversation-article .my-message {
+  width: 60%;
+  margin: 0 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.main-section .mobile-content-section .content-section .conversation-article .my-message .dog-images {
+  margin: 0 0.5rem 0 auto;
+}
+.main-section .mobile-content-section .content-section .conversation-article .my-message .dog-images .dog-image {
+  margin: 0.5rem;
+  border-radius: 1rem;
+}
+.main-section .mobile-content-section .content-section .conversation-article .my-message .my-text {
+  width: 90%;
+  text-align: left;
+  margin: 1rem;
+  background-color: hsl(0, 0%, 100%);
+  padding: 1rem;
+  border-radius: 1rem 1rem 0.5rem 1rem;
+  color: hsl(271, 15%, 43%);
+}
+.main-section .mobile-content-section .content-section .conversation-article .second-message .message {
+  margin: 1rem;
+  padding: 1rem;
+  color: hsl(276, 100%, 81%);
+  background-color: rgb(251, 235, 255);
+  border-radius: 1rem;
+  width: 60%;
+}
+.main-section .mobile-content-section .content-section .conversation-article .second-message .tariff {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+.main-section .mobile-content-section .content-section .conversation-article .second-message .tariff .time {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 1rem;
+  background-image: linear-gradient(90deg, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  border-radius: 1rem 1rem 1rem 0.5rem;
+  margin: 1rem;
+  padding: 0.5rem 0;
+}
+.main-section .mobile-content-section .content-section .conversation-article .second-message .tariff .time .circle {
+  margin: 0.5rem 1rem;
+}
+.main-section .mobile-content-section .content-section .conversation-article .second-message .tariff .time .walk-time {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+}
+.main-section .mobile-content-section .content-section .conversation-article .second-message .tariff .time .walk-time strong {
+  color: #fff;
+}
+.main-section .mobile-content-section .content-section .conversation-article .type-message {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  margin: 2rem auto;
+}
+.main-section .mobile-content-section .content-section .conversation-article .type-message .type {
+  display: block;
+  width: 100%;
+  padding: 1.4rem;
+  border-radius: 5rem;
+  border: none;
+  outline: none;
+}
+.main-section .mobile-content-section .content-section .conversation-article .type-message .right-arrow {
+  margin-left: -4rem;
+  border-radius: 50%;
+  background-color: hsl(289, 100%, 72%);
+  padding: 1rem;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.main-section .text-section {
+  margin: 2rem auto;
+}
+@media (min-width: 1024px) {
+  .main-section .text-section {
+    width: 30%;
+  }
+}
+.main-section .text-section .main-header {
+  text-align: center;
+  margin: 2rem auto;
+  font-size: clamp(2rem, 6vw, 4rem);
+  font-weight: bold;
+  color: hsl(271, 36%, 24%);
+}
+@media (min-width: 1024px) {
+  .main-section .text-section .main-header {
+    text-align: left;
+  }
+}
+.main-section .text-section .paragraph {
+  text-align: center;
+  margin: auto;
+  font-size: clamp(1.6rem, 6vw, 2rem);
+  letter-spacing: 0.1rem;
+  line-height: 2;
+  color: hsl(270, 7%, 64%);
+}
+@media (min-width: 1024px) {
+  .main-section .text-section .paragraph {
+    text-align: left;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}/*# sourceMappingURL=main.css.map */
